@@ -47,6 +47,7 @@ jobs:
         with:
           context: cloudflare-ddns-docker/
           file: cloudflare-ddns-docker/Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           cache-from: type=registry,ref=ghcr.io/akarys42/cloudflare-ddns-docker:latest
           cache-to: type=inline
