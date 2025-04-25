@@ -26,8 +26,8 @@ class Domain:
 
     domain: str
     record_type: str
-    zone: str
-    id: str
+    # zone: str
+    # id: str
 
 
 class ApplicationJob(threading.Thread):
