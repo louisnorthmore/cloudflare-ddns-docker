@@ -112,9 +112,9 @@ class ApplicationJob(threading.Thread):
             )).json()["result"]:
                 if record_json["type"] in ACCEPTED_RECORDS:
                     domain = Domain(
-                        record_json["name"],
+                        # record_json["name"],
                         record_json["type"],
-                        record_json["zone_id"],
+                        # record_json["zone_id"],
                         record_json["id"]
                     )
                     found_domains[f'{record_json["name"]}-{record_json["type"]}'] = domain
